@@ -7,11 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git url: 'https://github.com/mohamedazizbalti/Sample-App.git', credentialsId: 'github-pat'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
